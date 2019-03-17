@@ -13,3 +13,12 @@ min_child_weight = 0,...1....inf          min sum of weights needed for partitio
 
 lambda = L2 regularization param
 alpha = L1 regularization param
+
+
+
+How trees grow
+
+while growing at each step algorithm performs a split, to perform split the algorithm figures out the best feature to use.
+At the end of tree we want our leaves to be as pure(one class) as possible.
+The improvement by each split is called gain.
+
