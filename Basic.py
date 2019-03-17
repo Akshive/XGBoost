@@ -22,6 +22,14 @@ y_val = labels[int(train.shape[0]*0.8):, :]
 dtrain = xgb.DMatrix(x_train, label = y_train)
 dval = xgb.DMatrix(x_val, label = y_val)
 
+
+'''
+params 
+objective is binary classification
+max_depth of underlying decision tree = 2
+eta = 1 fast and aggressive training.
+'''
+
 params = {
     'objective':'binary:logistic',
     'max_depth':2,
